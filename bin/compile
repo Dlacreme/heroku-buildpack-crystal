@@ -67,9 +67,9 @@ start "Installing Dependencies"
   shards --production
 finished
 
-start "Run migrations"
-  crystal sam.cr -- db:setup
-finished
+# start "Run migrations"
+#   crystal sam.cr -- db:setup
+# finished
 
 NO_DEBUG_IF_AVAILABLE=`crystal build --help | grep -q -- --no-debug && echo -n --no-debug`
 
